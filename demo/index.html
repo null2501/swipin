@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      swipin
+    </title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="stylesheet" href="../dist/swipin.min.css">
+    <link rel="stylesheet" href="css/demo.css">
+	</head>
+	<body>
+		<div style="height:200px"></div>
+		<div class="swipin swipin-gaps" id="slider01" data-autoplay="3000" data-mousepause="false">
+			<div class="swipin-extender">
+				<div class="swipin-slider">
+					<div class="swipin-item swipin-prev">
+						<img width="1280" height="720" src="pics/01.jpg" srcset="pics/01s.jpg 640w, pics/01.jpg">
+						<h3>Un titolo interessante 1</h3>
+					</div>
+					<div class="swipin-item swipin-current">
+						<img width="1280" height="720"src="pics/02.jpg" srcset="pics/02s.jpg 640w, pics/02.jpg">
+						<h3>Un titolo interessante 2</h3>
+					</div>
+					<div class="swipin-item swipin-next">
+						<img width="1280" height="720" src="pics/03.jpg" srcset="pics/03s.jpg 640w, pics/03.jpg">
+						<h3>Un titolo interessante 3</h3>
+					</div>
+					<div class="swipin-item">
+						<img width="1280" height="720" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAABaCAQAAACVz5XZAAAAiUlEQVR42u3QQQ0AAAgEIC+59YxlCF9uEIFMFwcRKFCgQIEIFChQIAIFChSIQIECBSJQoECBCBQoUCACBQoUiECBAgUiUKBAgQgUKFAgAgUKFCgQgQIFCkSgQIECEShQoEAEChQoEIECBQpEoECBAhEoUKBABAoUKBCBAgUKRKBAgQIFChQo8LMFN4JzUV8H9V0AAAAASUVORK5CYII=" data-src="pics/04.jpg" data-srcset="pics/04s.jpg 640w, pics/04.jpg">
+						<h3>Un titolo interessante 4</h3>
+					</div>
+					<div class="swipin-item">
+						<img width="1280" height="720" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAABaCAQAAACVz5XZAAAAiUlEQVR42u3QQQ0AAAgEIC+59YxlCF9uEIFMFwcRKFCgQIEIFChQIAIFChSIQIECBSJQoECBCBQoUCACBQoUiECBAgUiUKBAgQgUKFAgAgUKFCgQgQIFCkSgQIECEShQoEAEChQoEIECBQpEoECBAhEoUKBABAoUKBCBAgUKRKBAgQIFChQo8LMFN4JzUV8H9V0AAAAASUVORK5CYII=" data-src="pics/05.jpg" data-srcset="pics/05s.jpg 640w, pics/05.jpg">
+						<h3>Un titolo interessante 5</h3>
+					</div>
+					<div class="swipin-item">
+						<img width="1280" height="720" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAABaCAQAAACVz5XZAAAAiUlEQVR42u3QQQ0AAAgEIC+59YxlCF9uEIFMFwcRKFCgQIEIFChQIAIFChSIQIECBSJQoECBCBQoUCACBQoUiECBAgUiUKBAgQgUKFAgAgUKFCgQgQIFCkSgQIECEShQoEAEChQoEIECBQpEoECBAhEoUKBABAoUKBCBAgUKRKBAgQIFChQo8LMFN4JzUV8H9V0AAAAASUVORK5CYII=" data-src="pics/06.jpg" data-srcset="pics/06s.jpg 640w, pics/06.jpg">
+						<h3>Un titolo interessante 6</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	<div style="height:200px"></div>
+		<div class="swipin swipin-1_1" id="slider02">
+			<div class="swipin-extender">
+				<div class="swipin-slider">
+					<div class="swipin-item swipin-current">
+						<div class="oneslide" data-background="pics/01.jpg"></div>
+					</div>
+					<div class="swipin-item swipin-current">
+						<div class="oneslide" data-background="pics/02.jpg"></div>
+					</div>
+					<div class="swipin-item swipin-current">
+						<div class="oneslide" data-background="pics/03.jpg"></div>
+					</div>
+					<div class="swipin-item swipin-current">
+						<div class="oneslide" data-background="pics/04.jpg"></div>
+					</div>
+					<div class="swipin-item swipin-current">
+						<div class="oneslide" data-background="pics/05.jpg"></div>
+					</div>
+					<div class="swipin-item swipin-current">
+						<div class="oneslide" data-background="pics/06.jpg"></div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div style="height:200px"></div>
+  <script>
+	var ob = document.getElementById('slider01');
+	ob.addEventListener('swipinInit',function(e){console.log('init', ob.swipin.info())});
+	ob.addEventListener('swipinBeforeMove',function(e){console.log('beforemove', ob.swipin.info());});
+	ob.addEventListener('swipinMove',function(e){console.log('move', ob.swipin.info());});
+	ob.addEventListener('swipinVisibility',function(e){console.log("visibility",ob.swipin.info());});
+  </script>
+  <script src="../dist/swipin.min.js" async></script>
+  </body>
+  </html>
