@@ -58,7 +58,7 @@ Optional: use Swipin demos as a starting point or create your slider from scratc
 
 ## Configuration
 
-You can configure slider option by adding data- attributes and CSS classes to the <div class="swipin"> element:
+You can configure slider option by adding data- attributes and CSS classes to the \<div class="swipin"\> element:
 
 #### Tag Attributes
 
@@ -191,7 +191,7 @@ document.getElementById('myslider').swipin.removeItem(3);
 
 ## Custom Events
 
-Event listener can be placed on the "swipin" <div> using - for example - the element id.
+Event listener can be placed on the "swipin" \<div\> using - for example - the element id.
 
 HTML
 ```html
